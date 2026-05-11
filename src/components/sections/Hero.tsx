@@ -66,8 +66,9 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent3/30 bg-accent3/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-accent3 animate-pulse-slow" />
             <span className="font-mono text-xs text-accent3 tracking-wider">
-              AVAILABLE FOR INTERNSHIPS
+              AVAILABLE FOR JOBS & INTERNSHIPS
             </span>
+            
           </div>
 
           {/* Name */}

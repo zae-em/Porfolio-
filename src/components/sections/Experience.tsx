@@ -55,11 +55,11 @@ export default function Experience() {
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-accent3 animate-pulse-slow" />
               <p className="text-accent3 font-mono text-sm font-semibold tracking-wide">
-                OPEN TO INTERNSHIP OPPORTUNITIES
+                OPEN TO JOBS & INTERNSHIP OPPORTUNITIES
               </p>
             </div>
             <p className="text-subtext text-sm mt-2 ml-5">
-              Currently seeking software engineering or AI/ML internships where I can contribute to real-world systems alongside experienced engineers.
+              Currently seeking software engineering or AI/ML roles — full-time or internship — where I can contribute to real-world systems alongside experienced engineers.
             </p>
           </div>
         </div>
