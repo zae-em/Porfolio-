@@ -41,6 +41,46 @@ export const resumeData = {
 
   projects: [
     {
+      title: "Resume Screening & Ranking System",
+      subtitle: "SaaS-Ready AI Candidate Filtering",
+      description:
+        "Developed a production-ready resume screening system using sentence-transformers (all-MiniLM-L6) for semantic candidate-to-job matching, reducing recruiter screening overhead by 70% across 500+ resumes. Engineered a skill extraction engine combining spaCy NER (Named Entity Recognition) and pattern-matching rules, identifying over 200+ specialized technical and soft skills from raw PDFs with high precision.",
+      tech: ["Python", "sentence-transformers", "spaCy", "NER", "Natural Language Processing", "PDF Parsing"],
+      github: "https://github.com/zae-em",
+      highlights: ["70% Screening Cost Reduction", "200+ Skills Auto-Extracted", "Ready for SaaS Integration"],
+      category: "AI / ML",
+    },
+    {
+      title: "Real-Time Anomaly Detection System",
+      subtitle: "Scalable MLOps Streaming Pipeline",
+      description:
+        "Architected a production-grade streaming pipeline using Apache Kafka and Isolation Forest for real-time anomaly detection with online learning. Integrated ADWIN/DDM concept drift detection to automatically retrain models on shifting live data distributions. Built a comprehensive MLOps observability suite with Prometheus, Grafana, and Docker Compose, presenting live traffic analytics via a custom Streamlit dashboard.",
+      tech: ["Python", "Apache Kafka", "Isolation Forest", "Streamlit", "Docker Compose", "Prometheus", "Grafana", "MLOps"],
+      github: "https://github.com/zae-em",
+      highlights: ["Real-Time Kafka Streaming", "Automated Concept Drift Retraining", "Full Prometheus/Grafana Stack"],
+      category: "AI / ML",
+    },
+    {
+      title: "VisionOCR Multimodal",
+      subtitle: "Cost-Optimized VLM for Document Understanding",
+      description:
+        "Designed a high-throughput multimodal document understanding pipeline using InternVL for concurrent text and tabular data extraction from complex layout business documents. Deployed the system with 4-bit model quantization, achieving a 2.1s per page inference speed and 80%+ reduction in VRAM hosting costs in a production environment.",
+      tech: ["Python", "InternVL", "4-bit Quantization", "Vision-Language Models", "OCR", "Adaptive Chunking"],
+      github: "https://github.com/zae-em",
+      highlights: ["80% GPU Cost Reduction", "2.1s/Page Fast Inference", "Layout-Aware Table Extraction"],
+      category: "AI / ML",
+    },
+    {
+      title: "RAG-Based PDF Q&A System",
+      subtitle: "Enterprise Knowledge Retrieval Engine",
+      description:
+        "Engineered an end-to-end Retrieval-Augmented Generation (RAG) pipeline supporting conversational search across dense research papers and corporate textbooks. Implemented semantic text chunking, FAISS vector search indexing, and Gemini LLM synthesis. Tuned chunk sizes and overlap parameter configurations to maximize retrieval accuracy while minimizing API token usage.",
+      tech: ["Python", "LangChain", "Gemini LLM", "FAISS Vector DB", "PyMuPDF", "Semantic Chunking"],
+      github: "https://github.com/zae-em",
+      highlights: ["Semantic Retrieval Optimization", "Token-Cost Optimized Pipeline", "Modular LLM Backend Integration"],
+      category: "AI / ML",
+    },
+    {
       title: "KLT Feature Tracker",
       subtitle: "GPU-Accelerated Computer Vision",
       description:
@@ -59,16 +99,6 @@ export const resumeData = {
       github: "https://github.com/zae-em",
       highlights: ["O(log n) Lookups", "SHA-256 + Merkle Hashing", "Full Branch Support"],
       category: "Systems",
-    },
-    {
-      title: "RAG PDF Q&A System",
-      subtitle: "LLM-Powered Document Intelligence",
-      description:
-        "Designed an end-to-end RAG pipeline: PDF ingestion → semantic chunking → FAISS vector search → Gemini LLM answer synthesis. Tuned chunk size and overlap parameters to improve retrieval precision with modular architecture.",
-      tech: ["Python", "LangChain", "Gemini LLM", "FAISS", "PyMuPDF"],
-      github: "https://github.com/zae-em",
-      highlights: ["End-to-End RAG Pipeline", "FAISS Vector Search", "Gemini LLM"],
-      category: "AI / ML",
     },
     {
       title: "Plants vs. Zombies Clone",
@@ -104,11 +134,11 @@ export const resumeData = {
 
   skills: {
     "Languages": ["C++", "C", "Python", "Java", "JavaScript", "CUDA"],
-    "Web & Frameworks": ["HTML", "CSS", "Django", "Next.js", "React"],
-    "AI / ML": ["LangChain", "RAG", "FAISS", "OpenCV", "NumPy", "Pandas", "PyTorch", "Scikit-learn"],
+    "Web & Frameworks": ["HTML", "CSS", "Django", "Next.js", "React", "Streamlit"],
+    "AI / ML": ["LangChain", "RAG", "FAISS", "sentence-transformers", "spaCy NER", "VLM (InternVL)", "OpenCV", "NumPy", "Pandas", "PyTorch", "Scikit-learn"],
     "HPC & Systems": ["CUDA", "GPU Profiling", "Parallel Computing", "gprof"],
     "Databases": ["MySQL", "SQLite"],
-    "Tools & Platforms": ["Git", "GitHub", "JavaFX", "SFML", "JDBC"],
+    "Tools & Platforms": ["Git", "GitHub", "Docker", "Apache Kafka", "Prometheus", "Grafana", "MLOps", "SFML"],
   },
 
   certifications: [
