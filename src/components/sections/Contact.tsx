@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <SectionWrapper id="contact" className="border-t border-border/40">
       <SectionHeader
-        eyebrow="05. contact"
+        eyebrow="06. contact"
         title="Let's work together"
         subtitle="Open to internship opportunities, freelance projects, and interesting collaborations. Reach out and let's build something."
       />

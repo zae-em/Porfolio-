@@ -7,7 +7,7 @@ export const resumeData = {
   linkedin: "https://linkedin.com",
   github: "https://github.com/zae-em",
   summary:
-    "Computer Science undergraduate at NUCES Islamabad specialising in full-stack development and AI/ML engineering, with a track record of shipping complete systems — from low-level version control engines in C++ to production-style LLM pipelines in Python and GPU-accelerated computer vision in CUDA. Holds Andrew Ng's Machine Learning Specialisation and applies supervised learning, computer vision and retrieval-augmented generation in self-directed projects.",
+    "Computer Science undergraduate and Research Assistant at NUCES Islamabad specialising in AI/ML engineering, NLP research, and high-performance computing. Proven track record of shipping end-to-end production systems and co-authoring faculty-supervised research in low-resource Aspect-Based Sentiment Analysis and parallel algorithmic optimization across CUDA, OpenMP, and MPI.",
 
   education: [
     {
@@ -35,6 +35,74 @@ export const resumeData = {
       bullets: [
         "Led lab sessions for 40+ undergraduate students, breaking down OOP fundamentals — inheritance, polymorphism, encapsulation and design patterns — through live coding walkthroughs.",
         "Evaluated assignments with written technical feedback and ran weekly office hours, directly resolving student debugging errors in Java-based coursework.",
+      ],
+    },
+  ],
+
+  research: [
+    {
+      title: "Roman Urdu Aspect-Based Sentiment Analysis (ABSA) Research",
+      role: "Research Assistant to Faculty Advisor",
+      institution: "NUCES, Islamabad",
+      period: "Jun 2026 – Aug 2026",
+      category: "NLP & Low-Resource AI",
+      publicationStatus: "Co-Authored Paper with Faculty Advisor",
+      overview:
+        "Investigated targeted lexical normalization and Aspect-Based Sentiment Analysis (ABSA) methodologies for Roman Urdu, addressing colloquial variance, phonetic irregularities, and the acute lack of standardized benchmark resources in South Asian low-resource languages.",
+      metrics: [
+        { label: "Corpus Size", value: "34,903 Reviews" },
+        { label: "ABSA Benchmark", value: "5,986 Instances" },
+        { label: "Macro-F1 Gain", value: "+3.0 Pts Recovered" },
+        { label: "Empirical Runs", value: "54 Evaluated Runs" },
+      ],
+      bullets: [
+        "Constructed a large-scale 34,903-review Roman Urdu corpus and established a curated 1,500-review, 5,986-instance multi-aspect ABSA benchmark annotated across 8 aspect categories (Quality, Delivery, Price, Customer Support, Packaging, Usability, Value, General).",
+        "Pioneered a strict TRAIN-only phonetic and morphological normalization pipeline to completely eliminate data leakage across evaluation folds, resolving non-standardized colloquial spellings without test-set contamination.",
+        "Conducted a systematic empirical evaluation of 9 TF-IDF feature representations (word, character, sub-word n-grams) and classification algorithms across 54 experimental runs, demonstrating that targeted domain-aware normalization recovered up to 3 points of Macro-F1 compared to aggressive full normalization baselines.",
+        "Co-authored the academic research manuscript with the faculty advisor detailing dataset creation, annotation guidelines, zero-leakage normalization protocols, and comparative empirical findings.",
+      ],
+      tech: [
+        "Python",
+        "Aspect-Based Sentiment Analysis (ABSA)",
+        "Natural Language Processing",
+        "TF-IDF & Sub-word N-Grams",
+        "Scikit-learn",
+        "Data Leakage Prevention",
+        "Corpus Annotation",
+        "Statistical Evaluation",
+      ],
+    },
+    {
+      title: "K-Means Clustering Optimization via Parallel & Distributed Computing",
+      role: "Research Assistant to Faculty Advisor",
+      institution: "NUCES, Islamabad",
+      period: "Feb 2026 – Apr 2026",
+      category: "High-Performance Computing & GPU",
+      publicationStatus: "Faculty-Supervised HPC Investigation",
+      overview:
+        "Researched and engineered hardware-conscious parallel implementations of the K-Means clustering algorithm across shared-memory CPUs (OpenMP), massively parallel GPUs (NVIDIA CUDA), and distributed clusters (MPI).",
+      metrics: [
+        { label: "Peak Acceleration", value: "Up to 12x vs CPU Baseline" },
+        { label: "Parallel Efficiency", value: "+35% Scalability Gain" },
+        { label: "Architectures", value: "OpenMP + CUDA + MPI" },
+        { label: "Benchmark Scale", value: "1M+ Vectors (High-Dim)" },
+      ],
+      bullets: [
+        "Architected parallel K-Means clustering variants in OpenMP, CUDA, and MPI, accelerating pairwise Euclidean distance matrix computations and centroid recalculations by up to 12x over sequential baselines.",
+        "Designed custom CUDA kernels leveraging shared memory tiling, coalesced memory transactions, and warp-level reduction primitives to maximize GPU compute utilization and eliminate global memory latency bottlenecks.",
+        "Implemented memory hierarchy and scheduling optimizations in OpenMP—including cache blocking, contiguous memory layouts for SIMD vectorization, and data-locality tuning—eliminating false sharing across multi-core CPU threads.",
+        "Developed distributed-memory clustering via non-blocking MPI communication collectives (MPI_Allreduce, MPI_Scatterv) with custom load-partitioning, improving parallel scalability efficiency by 35% across massive synthetic and real-world high-dimensional datasets under faculty supervision.",
+      ],
+      tech: [
+        "C / C++",
+        "CUDA",
+        "OpenMP",
+        "MPI",
+        "High-Performance Computing (HPC)",
+        "Parallel Algorithms",
+        "Cache Optimization",
+        "GPU Profiling (nvprof / gprof)",
+        "Distributed Computing",
       ],
     },
   ],

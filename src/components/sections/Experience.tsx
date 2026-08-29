@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <SectionWrapper id="experience" className="border-t border-border/40">
       <SectionHeader
-        eyebrow="04. experience"
+        eyebrow="05. experience"
         title="Work & Teaching"
         subtitle="Hands-on experience applying and teaching software engineering concepts."
       />
