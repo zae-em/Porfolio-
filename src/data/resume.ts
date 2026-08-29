@@ -41,6 +41,26 @@ export const resumeData = {
 
   projects: [
     {
+      title: "Enterprise Knowledge Retrieval System",
+      subtitle: "Production Hybrid Search & Cross-Encoder Reranking Pipeline",
+      description:
+        "Engineered an end-to-end Enterprise Knowledge Retrieval System resolving cross-format data fragmentation across PDFs, CSVs, TXT files, and web URLs. Built an advanced retrieval pipeline featuring Recursive Text Splitter chunking and Sentence Transformers embeddings, combining Qdrant vector similarity with BM25 keyword retrieval fused via Reciprocal Rank Fusion (RRF). Integrated Cross-Encoder reranking using custom score fusion (Final Score = 0.65 × Cross-Encoder + 0.35 × RRF) and Groq LLM for low-latency structured answer synthesis. Rigorously evaluated retrieval performance using Recall@K, MRR, and RAGAS Context Precision/Recall.",
+      tech: ["Python", "Qdrant", "BM25", "Sentence-Transformers", "Cross-Encoder", "Reciprocal Rank Fusion (RRF)", "Groq LLM", "RAGAS", "FastAPI", "Recursive Text Splitter"],
+      github: "https://github.com/zae-em",
+      highlights: ["Hybrid Qdrant + BM25 Search", "0.65 Cross-Encoder + 0.35 RRF Scoring", "Groq LLM Structured Synthesis", "Recall@K, MRR & RAGAS Evaluated"],
+      category: "AI / ML",
+    },
+    {
+      title: "ChestSight AI",
+      subtitle: "Production Medical Imaging & Explainable AI (XAI) Platform",
+      description:
+        "Architected an end-to-end medical diagnostic platform featuring a multi-model factory (EfficientNet-B3, DenseNet121, ResNet50, ViT-B/16) trained on Chest X-ray datasets with ONNX runtime optimization and Grad-CAM / ViT token-reshaped XAI heatmaps. Built on Python 3.12 & FastAPI using Clean Architecture with async SQLAlchemy 2.0, PostgreSQL, Redis caching, Argon2 + JWT RBAC, and automated ReportLab PDF diagnostic reporting. Delivered with a React 19/TypeScript dashboard, Docker Compose multi-container deployment, Nginx edge proxy, and automated GitHub Actions CI/CD.",
+      tech: ["PyTorch", "Vision Transformers (ViT)", "Grad-CAM (XAI)", "FastAPI", "Python 3.12", "React 19", "TypeScript", "PostgreSQL", "Redis", "Docker Compose", "ONNX", "Nginx", "GitHub Actions"],
+      github: "https://github.com/zae-em",
+      highlights: ["Multi-Model Factory (ViT, CNNs) & Grad-CAM XAI", "Clean Architecture & Async SQLAlchemy 2.0", "React 19 Interactive Heatmap Viewer", "Full Docker Compose & CI/CD Pipeline"],
+      category: "AI / ML",
+    },
+    {
       title: "Resume Screening & Ranking System",
       subtitle: "SaaS-Ready AI Candidate Filtering",
       description:
@@ -68,16 +88,6 @@ export const resumeData = {
       tech: ["Python", "InternVL", "4-bit Quantization", "Vision-Language Models", "OCR", "Adaptive Chunking"],
       github: "https://github.com/zae-em",
       highlights: ["80% GPU Cost Reduction", "2.1s/Page Fast Inference", "Layout-Aware Table Extraction"],
-      category: "AI / ML",
-    },
-    {
-      title: "RAG-Based PDF Q&A System",
-      subtitle: "Enterprise Knowledge Retrieval Engine",
-      description:
-        "Engineered an end-to-end Retrieval-Augmented Generation (RAG) pipeline supporting conversational search across dense research papers and corporate textbooks. Implemented semantic text chunking, FAISS vector search indexing, and Gemini LLM synthesis. Tuned chunk sizes and overlap parameter configurations to maximize retrieval accuracy while minimizing API token usage.",
-      tech: ["Python", "LangChain", "Gemini LLM", "FAISS Vector DB", "PyMuPDF", "Semantic Chunking"],
-      github: "https://github.com/zae-em",
-      highlights: ["Semantic Retrieval Optimization", "Token-Cost Optimized Pipeline", "Modular LLM Backend Integration"],
       category: "AI / ML",
     },
     {
@@ -133,12 +143,12 @@ export const resumeData = {
   ],
 
   skills: {
-    "Languages": ["C++", "C", "Python", "Java", "JavaScript", "CUDA"],
-    "Web & Frameworks": ["HTML", "CSS", "Django", "Next.js", "React", "Streamlit"],
-    "AI / ML": ["LangChain", "RAG", "FAISS", "sentence-transformers", "spaCy NER", "VLM (InternVL)", "OpenCV", "NumPy", "Pandas", "PyTorch", "Scikit-learn"],
+    "Languages": ["Python", "TypeScript", "JavaScript", "C++", "C", "Java", "CUDA", "SQL"],
+    "Web & Frameworks": ["FastAPI", "React 19", "Next.js", "Tailwind CSS", "Vite", "Django", "Streamlit", "HTML", "CSS"],
+    "AI / ML": ["PyTorch", "Vision Transformers (ViT)", "Grad-CAM (XAI)", "Hybrid RAG", "Qdrant", "BM25", "Cross-Encoder", "Sentence-Transformers", "Groq LLM", "RAGAS", "ONNX", "LangChain", "FAISS", "spaCy NER", "VLM (InternVL)", "Scikit-learn", "OpenCV"],
     "HPC & Systems": ["CUDA", "GPU Profiling", "Parallel Computing", "gprof"],
-    "Databases": ["MySQL", "SQLite"],
-    "Tools & Platforms": ["Git", "GitHub", "Docker", "Apache Kafka", "Prometheus", "Grafana", "MLOps", "SFML"],
+    "Databases": ["PostgreSQL", "Redis", "Qdrant", "SQLAlchemy / asyncpg", "MySQL", "SQLite"],
+    "Tools & Platforms": ["Docker", "Docker Compose", "Nginx", "GitHub Actions CI/CD", "Git", "Alembic", "Apache Kafka", "Prometheus", "Grafana", "MLOps", "Linux"],
   },
 
   certifications: [

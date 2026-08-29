@@ -20,7 +20,7 @@ export default function Projects() {
       <SectionHeader
         eyebrow="03. projects"
         title="Things I've Built"
-        subtitle="From GPU-accelerated CUDA trackers to full-stack web platforms — each project is a complete system."
+        subtitle="From production Medical XAI platforms and Hybrid RAG pipelines to GPU-accelerated CUDA trackers — each project is a complete system."
       />
 
       {/* Featured Projects */}

@@ -7,9 +7,9 @@ import { resumeData } from "@/data/resume";
 const roles = [
   "Full-Stack Developer",
   "AI/ML Engineer",
-  "CUDA Programmer",
-  "LLM Pipeline Builder",
-  "Systems Engineer",
+  "Medical AI & XAI Specialist",
+  "Hybrid RAG Pipeline Architect",
+  "CUDA & Systems Engineer",
 ];
 
 export default function Hero() {
@@ -99,8 +99,9 @@ export default function Hero() {
           {/* Summary excerpt */}
           <p className="text-subtext leading-relaxed max-w-2xl mb-10 text-base md:text-lg">
             CS undergraduate shipping complete systems — from{" "}
-            <span className="text-accent font-medium">GPU-accelerated CUDA pipelines</span> to{" "}
-            <span className="text-accent2 font-medium">production LLM RAG systems</span>.
+            <span className="text-accent font-medium">Explainable Medical AI (XAI)</span> and{" "}
+            <span className="text-accent2 font-medium">Production Hybrid RAG engines</span> to{" "}
+            <span className="text-orange-400 font-medium">GPU-accelerated CUDA pipelines</span>.
             Seeking a software or AI engineering internship.
           </p>
 
